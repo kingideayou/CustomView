@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="PieChart">
+    <declare-styleable name="ClickableText">
         <attr name="labelPosition" format="enum">
             <enum name="left" value="0" />
             <enum name="right" value="1" />
@@ -14,15 +14,21 @@
     </declare-styleable>
 
 
-
-    <attr name="titleText" format="string" />
-    <attr name="titleTextColor" format="color" />
+    <attr name="titleText" format="string"/>
     <attr name="titleTextSize" format="dimension" />
+    <attr name="titleTextColor" format="color" />
+    <attr name="image" format="reference" />
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0"/>
+        <enum name="center" value="1"/>
+    </attr>
 
-    <declare-styleable name="CustomTitleView">
+    <declare-styleable name="CustomImageView">
         <attr name="titleText" />
-        <attr name="titleTextColor" />
         <attr name="titleTextSize" />
+        <attr name="titleTextColor" />
+        <attr name="image" />
+        <attr name="imageScaleType" />
     </declare-styleable>
 
 </resources>

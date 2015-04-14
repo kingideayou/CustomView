@@ -1,4 +1,4 @@
-package com.next.customview;
+package com.next.customview.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -12,12 +12,14 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
+import com.next.customview.R;
+
 import java.util.Random;
 
 /**
  * Created by NeXT on 15-4-14.
  */
-public class PieChart extends View {
+public class ClickableText extends View {
 
     private int mTextPos;
     private int mTextColor;
@@ -33,37 +35,37 @@ public class PieChart extends View {
     private Paint mPiePaint;
     private Paint mShadowPaint;
 
-    public PieChart(Context context) {
+    public ClickableText(Context context) {
         this(context, null);
     }
 
-    public PieChart(Context context, AttributeSet attrs) {
+    public ClickableText(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public PieChart(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public ClickableText(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
-    public PieChart(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ClickableText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TypedArray a = context.getTheme().obtainStyledAttributes(
                 attrs,
-                R.styleable.PieChart,
+                R.styleable.ClickableText,
                 defStyleAttr, 0);
 
         try {
 //            mShowText = a.getBoolean(R.styleable.PieChart_showText, false);
             mShowText = true;
-            mTextPos = a.getInteger(R.styleable.PieChart_labelPosition, 0);
-            mTextColor = a.getColor(R.styleable.PieChart_textColor, R.color.white);
-            mTextHeight = a.getFloat(R.styleable.PieChart_textHeight, 0);
-            mTextWidth = a.getFloat(R.styleable.PieChart_textWidth, 0);
-            mTextString = a.getString(R.styleable.PieChart_textString);
+            mTextPos = a.getInteger(R.styleable.ClickableText_labelPosition, 0);
+            mTextColor = a.getColor(R.styleable.ClickableText_textColor, R.color.white);
+            mTextHeight = a.getFloat(R.styleable.ClickableText_textHeight, 0);
+            mTextWidth = a.getFloat(R.styleable.ClickableText_textWidth, 0);
+            mTextString = a.getString(R.styleable.ClickableText_textString);
             // 默认设置为16sp，TypeValue也可以把sp转化为px
             mTextSize = a.getDimensionPixelSize(
-                    a.getIndex(R.styleable.PieChart_textSize),
+                    a.getIndex(R.styleable.ClickableText_textSize),
                     (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                     16,
                     getResources().getDisplayMetrics()));

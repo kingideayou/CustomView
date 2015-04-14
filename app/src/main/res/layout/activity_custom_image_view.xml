@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.next.customview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.next.customview.ImageActivity"
+    tools:ignore="ResAuto">
+
+    <com.next.customview.view.BorderImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:image="@drawable/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText="hello android ! "
+        custom:titleTextColor="#ff0000"
+        custom:titleTextSize="30sp" />
+
+    <com.next.customview.view.BorderImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:image="@drawable/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText="helloworldwelcome"
+        custom:titleTextColor="#00ff00"
+        custom:titleTextSize="20sp" />
+
+    <com.next.customview.view.BorderImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        custom:image="@drawable/ic_launcher"
+        custom:imageScaleType="center"
+        custom:titleText=" 啦啦啦~"
+        custom:titleTextColor="#ff0000"
+        custom:titleTextSize="12sp" />
+
+</LinearLayout>
