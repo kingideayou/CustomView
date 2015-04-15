@@ -42,7 +42,9 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_track) {
+            Intent intent = new Intent(MainActivity.this, CustomTrackActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);

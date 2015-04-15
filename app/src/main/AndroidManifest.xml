@@ -24,6 +24,10 @@
             android:name=".ProgressBarActivity"
             android:label="@string/title_activity_progress_bar" >
         </activity>
+        <activity
+            android:name=".CustomTrackActivity"
+            android:label="@string/title_activity_custom_track" >
+        </activity>
     </application>
 
 </manifest>

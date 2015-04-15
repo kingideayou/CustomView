@@ -43,4 +43,10 @@
         <attr name="speed" />
     </declare-styleable>
 
+    <!-- 圆角矩形 -->
+    <declare-styleable name="CustomTrackView">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+    </declare-styleable>
+
 </resources>

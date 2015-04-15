@@ -5,4 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_custom_image_view">CustomImageView</string>
     <string name="title_activity_progress_bar">ProgressBarActivity</string>
+    <string name="title_activity_custom_track">CustomTrackActivity</string>
+    <string name="track">跑道</string>
 </resources>
