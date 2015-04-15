@@ -22,6 +22,13 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.demo_3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ProgressBarActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

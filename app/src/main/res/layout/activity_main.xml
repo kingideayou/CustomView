@@ -21,11 +21,25 @@
         custom:textSize="20sp"
         />
 
-    <Button
-        android:id="@+id/demo_2"
+    <LinearLayout
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="demo 2"/>
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/demo_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="demo 2"/>
+
+        <Button
+            android:id="@+id/demo_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="demo 3"/>
+
+
+    </LinearLayout>
 
 </RelativeLayout>

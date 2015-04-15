@@ -20,6 +20,10 @@
             android:name=".ImageActivity"
             android:label="@string/title_activity_custom_image_view" >
         </activity>
+        <activity
+            android:name=".ProgressBarActivity"
+            android:label="@string/title_activity_progress_bar" >
+        </activity>
     </application>
 
 </manifest>
